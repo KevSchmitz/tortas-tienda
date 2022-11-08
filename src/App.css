@@ -1,0 +1,285 @@
+/* cartIcon */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+/* Normalize */
+@import-normalize;
+
+@import "normalize.css";
+
+/* UTILITIES */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+:root {
+  --headingFont: "Tangerine", serif;
+  --paragraphFont: ;
+  --primary: #845738;
+  --secondary: #ea90b3;
+  --terciary: #ffdeab;
+  --white: #ffffff;
+  --black: #000000;
+  --darkgray: #1e1e1e;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER */
+
+/* navbar */
+
+.background-header {
+  background-image: url(../img/cupcakes-cakes-currants-berries-muffins-pastries.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.filter {
+  background-color: rgb(0, 0, 0, 0.7);
+  height: inherit;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.navbar img {
+  width: 100px;
+}
+
+@media (min-width: 480px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar img {
+    width: 150px;
+  }
+
+  .navbar .cartwidget {
+    width: 150px;
+    text-align: center;
+  }
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+/* .navbar-section {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+} */
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-links h2 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .navbar-links {
+    flex-direction: row;
+  }
+}
+
+.navbar-links a {
+  font-size: 30px;
+  color: var(--secondary);
+}
+
+.header-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+/* Cartwidget */
+
+.material-symbols-outlined {
+  color: var(--white);
+}
+
+/* ItemCount */
+
+.item-count {
+  display: flex;
+  gap: 20px;
+  height: 70px;
+  margin-top: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.item-count p {
+  height: 30px;
+  margin: 0;
+}
+
+/* ItemListContainer */
+
+.item-list-container {
+  margin-top: 40px;
+}
+
+/* ItemList */
+
+@media (min-width: 480px) {
+  .items-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 770px) {
+  .items-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Item */
+
+.item {
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.item:hover {
+  box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
+  -webkit-box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
+  -moz-box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
+}
+
+.item-image {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* ItemDetailContainer */
+
+.itemDetail-container {
+  width: min(90%, 800px);
+  margin: 20px auto;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.itemDetail-image {
+  border-radius: 20px 20px 0 0;
+}
+
+.itemDetail-info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.itemDetail-price {
+  text-align: end;
+  color: var(--darkgray);
+}
+
+/* Miscellaneous */
+
+.button {
+  margin: 0 auto;
+  padding: 15px;
+  border: 2px solid var(--darkgray);
+  width: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0s;
+}
+
+.button:hover {
+  box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
+  -webkit-box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
+  -moz-box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
+}
+
+.brown {
+  /* background-color: var(--primary); */
+}
+
+.button-text {
+  color: var(--black);
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
