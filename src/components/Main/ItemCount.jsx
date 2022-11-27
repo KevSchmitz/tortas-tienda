@@ -1,5 +1,7 @@
 import { useState } from "react";
-const ItemCount = ({ stock, initial, onAdd }) => {
+
+// '= 1' es la manera de pasar un parametro por default a la prop, si el initial es 'undefined' entonces devuelve 1.
+const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const [counter, setCounter] = useState(initial);
 
   const sumar = () => {
@@ -9,7 +11,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   const restar = () => {
-    if (counter > initial) {
+    if (counter > 1) {
       setCounter(counter - 1);
     }
   };
@@ -24,7 +26,13 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       <p>{counter}</p>
       <input type="button" value="+" onClick={sumar} />
       <input type="button" value="Reset" onClick={reset} />
-      <input type="button" value="Add to Cart" onClick={onAdd} />
+      <input
+        type="button"
+        value="Add to Cart"
+        onClick={() => {
+          onAdd(counter);
+        }}
+      />
     </div>
   );
 };

@@ -1,12 +1,9 @@
 import React from "react";
 
-const Button = ({ texto, product, color }) => {
-  const consoles = () => {
-    console.log(product.id);
-  };
+const Button = ({ texto, color }) => {
   return (
-    <div className={`button ${color}`} onClick={consoles}>
-      <p className="button-text">{texto}</p>
+    <div className={`button ${color}`}>
+      <div className="button-text">{texto}</div>
     </div>
   );
 };

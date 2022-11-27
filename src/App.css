@@ -20,6 +20,18 @@ html {
   box-sizing: inherit;
 }
 
+.footer {
+  margin-top: 20px;
+  background-color: var(--darkgray);
+  color: var(--white);
+  height: auto;
+  padding: 15px 0 5px 0;
+}
+
+.footer img {
+  width: 30px;
+}
+
 .container {
   width: min(90%, 1200px);
   margin: 0 auto;
@@ -48,9 +60,14 @@ h3 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
@@ -107,20 +124,18 @@ img {
   }
 
   .navbar .cartwidget {
+    display: flex;
+    gap: 10px;
     width: 150px;
     text-align: center;
+    text-decoration: none;
+    color: white;
   }
 }
 
 .logo img {
   max-width: 200px;
 }
-
-/* .navbar-section {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-} */
 
 .navbar-links {
   display: flex;
@@ -228,6 +243,7 @@ img {
   flex-direction: column;
   align-items: flex-start;
   padding: 2rem;
+  gap: 10px;
 }
 
 /* ItemDetailContainer */
@@ -272,14 +288,11 @@ img {
   -moz-box-shadow: 7px 7px 20px -4px rgba(133, 98, 98, 0.5);
 }
 
-.brown {
-  /* background-color: var(--primary); */
-}
-
 .button-text {
   color: var(--black);
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
   font-size: 16px;
+  text-align: center;
 }
