@@ -7,8 +7,6 @@
 /* Normalize */
 @import-normalize;
 
-@import "normalize.css";
-
 /* UTILITIES */
 html {
   box-sizing: border-box;
