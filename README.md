@@ -4,7 +4,7 @@ Este Proyecto fue elaborado para un curso de React con la intención de poder se
 
 ![](https://res.cloudinary.com/ddcg1jktl/image/upload/v1666313420/Logo_Definitivo_-_Sweet_Pop_h1uujz.png)
 
-Link para ver el proyecto [Tienda]()
+Link para ver el proyecto [Tienda](https://sweetpopbakery.netlify.app/)
 
 ## Librerias utilizadas.
 
