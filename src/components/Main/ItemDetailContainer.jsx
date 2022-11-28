@@ -11,30 +11,10 @@ const ItemDetailContainer = () => {
   const { idProduct } = useParams();
 
   useEffect(() => {
-    // const getProduct = () => {
-    //   return new Promise((res, rej) => {
-    //     const foundProduct = products.find(
-    //       (product) => product.id === +idProduct
-    //     );
-    //     // Hay que parsear el idProduct ya que viene como string
-    //     const ref = idProduct ? foundProduct : products;
-    //     setTimeout(() => {
-    //       res(ref);
-    //     }, 2000);
-    //   });
-    // };
-    // getProduct()
-    //   .then((res) => setItem(res))
-    //   .catch((error) => console.log(error))
-    //   .finally(() => setLoading(false));
-
-    // FIRESTORE
-
     const ref = doc(collectionProds, idProduct);
 
     getDoc(ref)
       .then((res) => {
-        // console.log(res.data());
         setItem({
           id: res.id,
           ...res.data(),

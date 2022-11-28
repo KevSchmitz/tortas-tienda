@@ -7,7 +7,6 @@ import { Routes, Route } from "react-router-dom";
 const Main = () => {
   return (
     <main>
-      {/* Se envuelve a todos los componentes/elementos para acceder a sus rutas */}
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
         <Route path="/category/:categoryName" element={<ItemListContainer />} />

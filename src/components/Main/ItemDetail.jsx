@@ -9,7 +9,7 @@ const ItemDetail = ({ item }) => {
   const initialQuantity = itemQuantity(item.id);
 
   const onAdd = (qty) => {
-    setQuantity(qty); //Permite recibir la cantidad desde ItemCount
+    setQuantity(qty);
     addToCart(item, qty);
   };
 
@@ -25,7 +25,7 @@ const ItemDetail = ({ item }) => {
         <h3 className="itemDetail-price">${item.price}</h3>
       </div>
 
-      {quantity !== 0 ? ( //Permite alternar entre el componente ItemCart y Link que lleva al carrito de compras
+      {quantity !== 0 ? (
         <Link to="/cart" className="item-count">
           Ir al carrito
         </Link>

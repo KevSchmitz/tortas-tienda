@@ -34,26 +34,13 @@ const Navbar = () => {
           </Link>
 
           <div className="navbar-links">
-            {/* NavBar dinámico */}
             {categories.map((cat) => {
-              // Se usó return para devolver todas las categorías a la página
               return (
                 <NavLink to={`/category/${cat.path}`} key={cat.id}>
                   <h2>{cat.title}</h2>
                 </NavLink>
               );
             })}
-
-            {/* NavBar estático */}
-            {/* <NavLink to="/category/cakes">
-              <h2>Cakes</h2>
-            </NavLink>
-            <NavLink to="/category/cookies">
-              <h2>Cookies</h2>
-            </NavLink>
-            <NavLink to="/category/cupcakes">
-              <h2>Cupcakes</h2>
-            </NavLink> */}
           </div>
           <NavLink to="/cart">
             <Cartwidget />

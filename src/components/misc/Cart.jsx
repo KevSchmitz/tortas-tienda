@@ -4,7 +4,7 @@ import { CartContext } from "../../context/CartContext";
 
 const Cart = () => {
   const { cart, deleteOne, totalPrice, deleteProducts } =
-    useContext(CartContext); // Me permite usar el contexto creado de Cart, se aplica destructuring para utilizar la propiedad.
+    useContext(CartContext);
   return (
     <div
       className="container"

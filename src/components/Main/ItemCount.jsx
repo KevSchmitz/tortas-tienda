@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// '= 1' es la manera de pasar un parametro por default a la prop, si el initial es 'undefined' entonces devuelve 1.
 const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const [counter, setCounter] = useState(initial);
 

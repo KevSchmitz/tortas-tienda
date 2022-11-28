@@ -38,9 +38,6 @@ const Form = () => {
       .catch((error) => console.log(error));
   };
 
-  console.log(cart);
-  console.log(totalPrice());
-
   const handleName = (e) => setName(e.target.value);
   const handleLastName = (e) => setLastName(e.target.value);
   const handleEmail = (e) => setEmail(e.target.value);
