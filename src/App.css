@@ -126,7 +126,6 @@ img {
   .navbar .cartwidget {
     display: flex;
     gap: 10px;
-    width: 150px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -273,13 +272,16 @@ img {
 /* Miscellaneous */
 
 .button {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding: 15px;
   border: 2px solid var(--darkgray);
-  width: 150px;
   border-radius: 20px;
   cursor: pointer;
-  transition: all 0s;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .button:hover {

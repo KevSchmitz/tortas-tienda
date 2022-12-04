@@ -55,9 +55,12 @@ const Navbar = () => {
               <h2>Cupcakes</h2>
             </NavLink> */}
           </div>
-          <NavLink to="/cart">
-            <Cartwidget />
-          </NavLink>
+          <div className="navbar-cart" style={{ display: "flex", gap: "20px" }}>
+            <NavLink to="/cart">
+              <Cartwidget />
+            </NavLink>
+            <Link className="cartwidget">Mis compras</Link>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../misc/Button";
 
 const Item = ({ product }) => {
   return (
@@ -10,8 +9,12 @@ const Item = ({ product }) => {
         <h2>{product.name}</h2>
         <h4>${product.price}</h4>
       </section>
-      <Link to={`/detail/${product.id}`}>
-        <Button texto={"Ver Detalle"} color={"brown"} />
+
+      <Link
+        to={`/detail/${product.id}`}
+        style={{ display: "flex", margin: "0 auto" }}
+      >
+        <div className="button">Ver Detalle</div>
       </Link>
     </div>
   );

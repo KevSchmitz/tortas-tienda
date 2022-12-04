@@ -71,13 +71,10 @@ const Cart = () => {
         </div>
       )}
       <h3>Total a pagar: ${totalPrice()} </h3>
-      <input
-        type="button"
-        value="Vaciar Carrito"
-        style={{ width: "150px" }}
-        onClick={() => deleteProducts()}
-      />
-      <Link to="/checkout">
+      <div className="button" onClick={() => deleteProducts()}>
+        Vaciar Carrito
+      </div>
+      <Link to="/checkout" style={{ margin: "0 auto" }}>
         <div className="button">Realizar Compra</div>
       </Link>
     </div>
