@@ -46,9 +46,9 @@ const Form = () => {
 
   if (orderId) {
     return (
-      <div>
+      <div className="container">
         <h3>
-          Gracias por su compra, el código de su orden de compra es {orderId}
+          Gracias por su compra, el código de su orden de compra es {orderId}.
         </h3>
         <h4>Recuerde anotar su orden de compra.</h4>
       </div>

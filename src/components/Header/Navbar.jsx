@@ -59,7 +59,9 @@ const Navbar = () => {
             <NavLink to="/cart">
               <Cartwidget />
             </NavLink>
-            <Link className="cartwidget">Mis compras</Link>
+            <Link to="/myorders" className="cartwidget">
+              Mis compras
+            </Link>
           </div>
         </div>
       </div>
