@@ -59,9 +59,12 @@ const Navbar = () => {
             <NavLink to="/cart">
               <Cartwidget />
             </NavLink>
-            <Link to="/myorders" className="cartwidget">
+            <NavLink
+              to="/search"
+              style={{ textDecoration: "none", color: "white" }}
+            >
               Mis compras
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

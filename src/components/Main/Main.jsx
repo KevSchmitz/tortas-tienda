@@ -3,7 +3,9 @@ import ItemListContainer from "./ItemListContainer.jsx";
 import ItemDetailContainer from "./ItemDetailContainer.jsx";
 import Form from "../misc/Form.jsx";
 import { Routes, Route } from "react-router-dom";
-import Orders from "./Orders.jsx";
+import OrderList from "./OrdersList.jsx";
+import Search from "../misc/Search.jsx";
+import Admin from "../Main/Admin.jsx";
 
 const Main = () => {
   return (
@@ -15,7 +17,9 @@ const Main = () => {
         <Route path="/detail/:idProduct" element={<ItemDetailContainer />} />
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/checkout" element={<Form />}></Route>
-        <Route path="/myorders" element={<Orders />}></Route>
+        <Route path="/myorders/:idOrder" element={<OrderList />}></Route>
+        <Route path="/search" element={<Search />}></Route>
+        <Route path="/admin" element={<Admin />}></Route>
       </Routes>
     </main>
   );
